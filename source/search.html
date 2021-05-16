@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="search-page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="авиа, билеты">
+  <meta name="description" content="Поиск авиабилетов">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Inter:400,700&amp;subset=latin,cyrillic&amp;display=swap">
+  <link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body class="search__body" id="search__body">
+
+  <div class="search__page">
+    <main class="search__main">
+      <div class="search__main-background-left"></div>
+      <section class="search__section">
+        <div class="search__before-search-area"></div>
+        <div class="search__search-form">
+          <form class="search-form" id="search-form" autocomplete="off">
+
+            <div
+              class="search-form__control search-form__point-input-wrapper search-form__point-input-wrapper--departure1"
+              id="search-form__point-input-wrapper--departure1">
+
+              <div class="search-form__point-input-wrapper--modal__header visually-hidden"
+                id="search-form__point-input-wrapper--modal__header--departure1">
+                <p class="search-form__point-input-wrapper--modal__header-text" data-msg="$city-or-airport-departure">
+                  Город или аэропорт вылета</p>
+                <button type="button" class="search-form__point-input--modal__close-button"
+                  id="search-form__point-input--modal__close-button--departure1">
+                  <svg width="16" height="16">
+                    <use xlink:href="img/sprite.svg#cross"></use>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="search-form__primary-input-anchor">
+                <input type="text"
+                  class="search-form__primary-input search-form__point-input search-form__point-input--departure search-form__border-radius--mobile search-form__border-radius--left--tablet search-form__border-radius--left--desktop"
+                  id="search-form__point-input--departure1" placeholder="Город или аэропорт"
+                  data-msg-attribute-name="placeholder" data-msg-attribute="$city-or-airport">
+                <div class="search-form__point-wrapper search-form__point-wrapper--departure">
+                  <span class="search-form__point search-form__point_code--departure"
+                    id="search-form__point_code--departure1"></span>
+                </div>
+                <label class="search-form__input-label search-form__point-label--departure"
+                  id="search-form__point-label--departure1" data-msg="$departure-point-label">Откуда</label>
+
+                <div
+                  class="search-form__point-suggest-wrapper search-form__point-suggest-wrapper--departure visually-hidden"
+                  id="search-form__point-suggest-wrapper--departure1">
+                  <div class="point-suggest point-suggest--departure">
+                    <ul class="point-suggest__list point-suggest__list--departure" id="point-suggest__list--departure1">
+                      <li class="point-suggest__item">
+                        <div class="point-suggest__item_name_and_country">
+                          <span class="point-suggest__item_name">Москва</span>
+                          <span class="point-suggest__item_country">, Россия</span>
+                        </div>
+                        <div class="point-suggest__item_code">
+                          <span>MOW</span>
+                        </div>
+                      </li>
+                      <li class="point-suggest__item">
+                        <div class="point-suggest__item_name_and_country">
+                          <span class="point-suggest__item_name">Лондон</span>
+                          <span class="point-suggest__item_country">, Великобритания</span>
+                        </div>
+                        <div class="point-suggest__item_code">
+                          <span>LON</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="search-form__point-input-wrapper--modal__footer visually-hidden"
+                id="search-form__point-input-wrapper--modal__footer--departure"></div>
+            </div>
+          </form>
+        </div>
+        <div class="search__after-search-area"></div>
+      </section>
+      <div class="search__main-background-right"></div>
+    </main>
+  </div>
+
+</body>
+
+</html>
